@@ -15,10 +15,20 @@ module DateDefaulter
     end
   end
 
-  def self.configuration
+  module_function
+
+  def configuration
     Configuration.instance.tap do |configuration|
       yield configuration if block_given?
     end
+  end
+
+  def format
+    configuration.format
+  end
+
+  def format=(format)
+    configuration.format = format
   end
 end
 
