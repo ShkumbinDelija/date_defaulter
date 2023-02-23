@@ -28,9 +28,9 @@ class Date
 
   def to_s
     if DateDefaulter.configuration.format.nil?
-      strftime(DateDefaulter.configuration.format)
-    else
       date_defaulter_to_s
+    else
+      strftime(DateDefaulter.configuration.format)
     end
   end
 
