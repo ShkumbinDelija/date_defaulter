@@ -19,7 +19,7 @@ date = Date.new(2016, 10, 21)
 
 p date
 
-=> "01/01/2022"
+=> "21/10/2016"
 
 p date.strftime
 
