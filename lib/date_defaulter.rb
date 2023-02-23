@@ -1,8 +1,6 @@
 require 'date'
 
 module DateDefaulter
-  @@config = {}
-
   class Configuration
     @@instance = Configuration.new
 
