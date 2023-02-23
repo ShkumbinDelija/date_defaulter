@@ -37,20 +37,20 @@ class Date
   alias_method :date_defaulter_to_s, :to_s
 
   def to_s
-    if DateDefaulter.configuration.format.nil?
+    if DateDefaulter.format.nil?
       date_defaulter_to_s
     else
-      strftime(DateDefaulter.configuration.format)
+      strftime(DateDefaulter.format)
     end
   end
 
   def strftime(*args)
     return date_defaulter_strftime(*args) if args.any?
 
-    if DateDefaulter.configuration.format.nil?
+    if DateDefaulter.format.nil?
       date_defaulter_strftime
     else
-      date_defaulter_strftime(DateDefaulter.configuration.format)
+      date_defaulter_strftime(DateDefaulter.format)
     end
   end
 end
