@@ -1,6 +1,6 @@
 # DateDefaulter
 
-![Gem Downloads](https://rubygem-badges.onrender.com/gems/date_defaulter.png)
+![Gem Downloads](https://rubyontracks.com/badges/gems/date_defaulter)
 ![Gem Version](https://badge.fury.io/rb/date_defaulter.svg)
 
 Use this gem to set global defaults on how your Date is formatted when represented as a string.
